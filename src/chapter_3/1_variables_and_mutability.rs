@@ -4,3 +4,5 @@ fn main() {
     x = 6; // assigning second time to the imutable variable is impossible
     println!("The value of x is: {x}");
 }
+
+// TODO: continue
