@@ -5,4 +5,4 @@ fn main() {
     println!("The value of x is: {x}");
 }
 
-// TODO: continue
+// continue: https://doc.rust-lang.org/stable/book/ch03-01-variables-and-mutability.html#variables-and-mutability
