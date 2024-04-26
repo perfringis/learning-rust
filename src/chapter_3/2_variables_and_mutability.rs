@@ -1,6 +1,6 @@
 fn main() {
-    let x = 5;
+    let mut x = 5; // declaration of mutable value with mut keyword
     println!("The value of x is: {x}");
-    x = 6; // assigning second time to the imutable variable is impossible
+    x = 6;
     println!("The value of x is: {x}");
 }
