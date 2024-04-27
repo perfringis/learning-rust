@@ -1,3 +1,5 @@
+// Functions with Return Values
+
 fn main() {
     let x = plus_one(5);
 
@@ -5,5 +7,6 @@ fn main() {
 }
 
 fn plus_one(x: i32) -> i32 {
-    x + 1;
+    // return value + 1
+    x + 1 // expression
 }
