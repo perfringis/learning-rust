@@ -42,11 +42,13 @@ fn main() {
     let hex_literal: u32 = 0xff;
     let octal_literal: u32 = 0o77;
     let binary_literal:u8 = 0b0000_1111;
+    let binary_literal_2:u8 = b'A';
 
     println!("value {number_literal}");
     println!("value {hex_literal}");
     println!("value {octal_literal}");
     println!("value {binary_literal}");
+    println!("value {binary_literal_2}");
     
     // in release mode compiler doesn't handle integer overflow
     // if assigned value exceeded stored value then at the end of the day it is not what we are expecting
