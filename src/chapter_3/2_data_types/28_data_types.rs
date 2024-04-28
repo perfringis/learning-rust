@@ -1,18 +1,28 @@
 // Control Flow
 // Repetition with Loops
 
-// Returning Values from Loops
+// Loop Labels to Disambiguate Between Multiple Loops
 
 fn main() {
-    let mut counter = 0; // declaration of mutable variable
+    let mut count = 0;
+    'counting_up: loop {
+        println!("count = {count}");
 
-    let result = loop { // assigning returned value for loop to result variable
-        counter += 1;
+        let mut remaining = 10;
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 {
+                break;
+            }
 
-        if counter == 10 {
-            break counter * 2; // break keyword works like return keyword and returns counter * 2
+            if count == 2 {
+                break 'counting_up; // breaking inner loop and outer loop with label
+            }
+
+            remaining -= 1;
         }
-    };
 
-    println!("The result is {result}");
+        count += 1;
+    }
+    println!("End count = {count}");
 }
