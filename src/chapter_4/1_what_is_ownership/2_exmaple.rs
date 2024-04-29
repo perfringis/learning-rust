@@ -2,4 +2,13 @@
 
 // Ownership Rules
 
-// https://doc.rust-lang.org/stable/book/ch04-01-what-is-ownership.html#the-string-type
+// The String Type
+
+fn main() {
+    // it is not working!
+    let mut s = "Hello"; // the difference is how literal string vs String type is dealing with memory
+
+    s.push_str(", world");
+
+    println!("{}", s);
+}
