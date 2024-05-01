@@ -1,13 +1,19 @@
 fn main() {
-    let s1 = String::from("hello");
+  let s = String::from("TEST");
 
-    let (s2, len) = calculate_length(s1);
+  let len = first_word(&s);
 
-    println!("The length of '{}' is {}.", s2, len);
+  println!("len {len}");
 }
 
-fn calculate_length(s: String) -> (String, usize) {
-    let length = s.len(); // len() returns the length of a String
+fn first_word(s: &String) -> usize {
+  let bytes = s.as_bytes();
 
-    (s, length)
+  for (i, &item) in bytes.iter().enumerate() {
+      if item == b' ' {
+          return i;
+      }
+  }
+
+  s.len()
 }
