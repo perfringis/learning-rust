@@ -1,3 +1,5 @@
+// Using the Field Init Shorthand
+
 struct User {
     // active property of struct User is called "field"
     active: bool,
