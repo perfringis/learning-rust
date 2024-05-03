@@ -17,11 +17,13 @@ fn main() {
     println!("Email {email}");
 }
 
+// if the function parameter has the same like field in structure
+// then we can use short hand
 fn build_user(email: String, username: String) -> User {
     User {
         active: true,
-        username: username,
-        email: email,
+        username, // shorthand
+        email,    // shorthand
         sign_in_count: 1,
     }
 }
