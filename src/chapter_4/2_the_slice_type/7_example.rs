@@ -1,15 +1,17 @@
-// String Slices as Parameters
+// String Slices
 
 fn main() {
-  let s = "Hello World";
+  let s = String::from("Hello World");
 
-  let word = first_word(s);
+  let word = first_word(&s);
+
+  // s.clear(); // error!
 
   println!("word {word}");
 
 }
 
-fn first_word(s: &str) -> &str {
+fn first_word(s: &String) -> &str {
   let bytes = s.as_bytes();
 
   for (i, &item) in bytes.iter().enumerate() {
