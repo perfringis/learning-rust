@@ -1,3 +1,5 @@
+// The Option Enum and Its Advantages Over Null Values
+
 #[derive(Debug)]
 enum Message {
     Quit,                       // no data associated

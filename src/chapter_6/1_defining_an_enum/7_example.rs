@@ -7,15 +7,12 @@ enum Message {
 }
 
 impl Message {
-    fn call(&self) -> Message {
-        // The example returned value
-        self::Message::Quit
+    fn call(&self) {
+        // method body would be defined here
     }
 }
 
 fn main() {
-    let m = Message::Write(String::from("test"));
-    let value = m.call();
-
-    println!("val: {:?}", value);
+    let write_val = Message::Write(String::from("test"));
+    m.call();
 }
