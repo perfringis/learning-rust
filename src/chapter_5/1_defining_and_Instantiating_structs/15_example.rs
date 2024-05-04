@@ -1,17 +1,15 @@
 // Adding Useful Functionality with Derived Traits
 
-#[derive(Debug)]
 struct Rectangle {
     width: u32,
     height: u32,
 }
 
 fn main() {
-    let scale = 2;
     let rect1 = Rectangle {
-        width: dbg!(30 * scale),
+        width: 30,
         height: 50,
     };
 
-    dbg!(&rect1);
+    println!("rect1 is {}", rect1);
 }

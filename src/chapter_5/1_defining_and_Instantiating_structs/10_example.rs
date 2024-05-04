@@ -1,3 +1,7 @@
 // Unit-Like Structs Without Any Fields
 
-fn main() {}
+struct AlwaysEqual;
+
+fn main() {
+    let subject = AlwaysEqual;
+}
