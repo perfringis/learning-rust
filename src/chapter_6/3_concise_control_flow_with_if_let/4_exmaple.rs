@@ -16,7 +16,7 @@ enum Coin {
 
 fn main() {
     let mut count = 0;
-    let coin = Coin::Quarter(UsState::Alaska);
+    // let coin = Coin::Quarter(UsState::Alaska);
     let coin2 = Coin::Penny;
 
     if let Coin::Quarter(state) = coin2 {
