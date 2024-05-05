@@ -19,10 +19,12 @@ fn main() {
     // let coin = Coin::Quarter(UsState::Alaska);
     let coin2 = Coin::Penny;
 
-    if let Coin::Quarter(state) = coin2 {
-        println!("State quarter from {:?}!", state);
-    } else {
-        count += 1;
-        println!("count: {}", count);
+    match coin2 {
+        Coin::Quarter(state) => println!("State quarter from {:?}!", state),
+        _ => {
+            count += 1;
+
+            println!("count: {}", count);
+        }
     }
 }
