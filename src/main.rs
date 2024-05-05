@@ -1,21 +1,10 @@
-#[derive(Debug)]
-enum Message {
-    Quit,                       // no data associated
-    Move { x: i32, y: i32 },    // has named fields
-    Write(String),              // includes single String type
-    ChangeColor(i32, i32, i32), // includes 3 i32 values
-}
+// The Option Enum and Its Advantages Over Null Values
 
-impl Message {
-    fn call(&self) -> Message {
-        // The example returned value
-        self::Message::Quit
-    }
-}
+// #[derive(Debug)]
 
 fn main() {
-    let m = Message::Write(String::from("test"));
-    let value = m.call();
+    let x: i8 = 5;
+    let y: Option<i8> = Some(5);
 
-    println!("val: {:?}", value);
+    let sum = x + y;
 }
