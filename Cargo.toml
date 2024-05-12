@@ -1,4 +1,4 @@
-workspace = { members = [ "src/chapter_7/2_defining_modules_to_control_scope_and_privacy/2_example/restaurant","src/chapter_7/2_defining_modules_to_control_scope_and_privacy/backyard"] }
+workspace = { members = [] }
 [package]
 name = "learning-rust"
 version = "0.1.0"
